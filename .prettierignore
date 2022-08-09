@@ -1,0 +1,9 @@
+# Ignore artifacts:
+.deploy
+build
+e2e
+package.json
+package-lock.json
+yarn.lock
+dist
+node_modules
