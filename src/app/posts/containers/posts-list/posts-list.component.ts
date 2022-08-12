@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { PostService } from '../../services/post.service';
+import { map, switchMap, tap } from 'rxjs/operators';
+import { of } from 'rxjs';
+import { SwiperOptions } from 'swiper';
 
 @Component({
   selector: 'app-posts-list',
@@ -7,9 +11,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PostsListComponent implements OnInit {
 
-  constructor() { }
+  postsList$ = this.postSrv.loadPosts();
+  config: SwiperOptions = {
+    pagination: { 
+      el: '.swiper-pagination', 
+      clickable: true 
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev'
+    },
+    spaceBetween: 30
+  };
 
-  ngOnInit(): void {
+  constructor(private postSrv: PostService) { }
+
+  ngOnInit() {
+
   }
 
 }

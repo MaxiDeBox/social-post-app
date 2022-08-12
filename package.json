@@ -29,6 +29,8 @@
     "@angular/router": "~12.1.2",
     "@ngneat/until-destroy": "~8.0.4",
     "firebase": "^9.9.1",
+    "ngx-useful-swiper": "^10.0.1",
+    "swiper": "^6.8.1",
     "rxjs": "~6.6.0",
     "tslib": "^2.2.0",
     "zone.js": "~0.11.4"

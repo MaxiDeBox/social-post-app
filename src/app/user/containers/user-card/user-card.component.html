@@ -1,0 +1,43 @@
+<!-- Sidebar navigation -->
+<div class="wrap">
+    <div class="page">
+      <mat-sidenav-container class="example-container">
+        <mat-sidenav mode="side" opened>
+          <div class="page_title">
+            User Profile
+          </div>
+          <div class="page_actions">
+            <button mat-stroked-button color="primary" (click)="authService.SignOut()"> Log out </button>
+          </div>
+        </mat-sidenav>
+        <mat-sidenav-content>
+          <div class="page_content">
+            <div class="page_content_user">
+              <div class="page_content_user__info">
+                <h1 class="h2">User Profile</h1>
+                <ng-container *ngIf="authService.userData as user">
+                  <img src="{{ user.photoURL ? user.photoURL : '/assets/dummy-user.png' }}" alt="{{ user.displayName }}"/>
+  
+                  <div>
+                    <h1>
+                      Hello: <strong>{{ user.displayName ? user.displayName : 'User' }}</strong>
+                    </h1>
+                    <p>
+                      User ID: <strong>{{ user.uid }}</strong>
+                    </p>
+                    <p>
+                      Email: <strong>{{ user.email }}</strong>
+                    </p>
+                    <p>
+                      Email Verified: <strong>{{ user.emailVerified }}</strong>
+                    </p>
+                  </div>
+                </ng-container>
+              </div>
+            </div>
+          </div>
+        </mat-sidenav-content>
+      </mat-sidenav-container>
+    </div>
+  </div>
+  
