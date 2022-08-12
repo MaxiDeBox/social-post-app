@@ -1,38 +1,32 @@
-<div class="displayTable">
-  <div class="displayTableCell">
-    <div class="authBlock">
-      <h3>Sign In</h3>
-      <div class="formGroup">
-        <input type="text" class="formControl" placeholder="Username" #userName required />
-      </div>
-      <div class="formGroup">
-        <input type="password" class="formControl" placeholder="Password" #userPassword required />
-      </div>
-      <!-- Calling SignIn Api from AuthService -->
-      <div class="formGroup">
-        <input
-          type="button"
-          class="btn btnPrimary"
-          value="Log in"
-          (click)="authService.SignIn(userName.value, userPassword.value)"
-        />
-      </div>
-      <div class="formGroup">
-        <span class="or"><span class="orInner">Or</span></span>
-      </div>
-      <!-- Calling GoogleAuth Api from AuthService -->
-      <div class="formGroup">
-        <button type="button" class="btn googleBtn" (click)="authService.GoogleAuth()">
-          <i class="fab fa-google-plus-g"></i>
-          Log in with Google
-        </button>
-      </div>
-      <div class="forgotPassword">
-        <span routerLink="/sign-in/forgot-password">Forgot Password?</span>
-      </div>
-    </div>
-    <div class="redirectToLogin">
-      <span>Don't have an account?<span class="redirect" routerLink="/sign-in/registration"> Sign Up</span></span>
-    </div>
+<div class="authBlock">
+  <h3>Sign In</h3>
+  <div class="formGroup">
+    <mat-form-field class="example-full-width" appearance="fill">
+      <mat-label>Username</mat-label>
+      <input matInput placeholder="Username" #userName required>
+    </mat-form-field>
   </div>
+  <div class="formGroup">
+    <mat-form-field class="example-full-width" appearance="fill">
+      <mat-label>Password</mat-label>
+      <input matInput type="password" placeholder="Password" #userPassword required>
+    </mat-form-field>
+  </div>
+  <!-- Calling SignIn Api from AuthService -->
+  <div class="formGroup">
+    <button mat-stroked-button (click)="authService.SignIn(userName.value, userPassword.value)">Log in</button>
+  </div>
+  <div class="formGroup">
+    <span class="or"><span class="orInner">Or</span></span>
+  </div>
+  <!-- Calling GoogleAuth Api from AuthService -->
+  <div class="formGroup">
+    <button mat-stroked-button (click)="authService.GoogleAuth()">Log in with Google</button>
+  </div>
+  <div class="forgotPassword">
+    <button mat-button color="primary" routerLink="/sign-in/forgot-password">Forgot Password?</button>
+  </div>
+</div>
+<div class="redirectToLogin">
+  <span>Don't have an account?<button mat-button color="primary" routerLink="/sign-in/registration"> Sign Up</button></span>
 </div>

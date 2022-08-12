@@ -6,8 +6,7 @@ import { PostsListComponent } from './containers/posts-list/posts-list.component
 const routes: Routes = [
   {
     path: '',
-    component: PostsListComponent,
-    canActivate: [AuthGuard],
+    component: PostsListComponent
   }
 ];
 

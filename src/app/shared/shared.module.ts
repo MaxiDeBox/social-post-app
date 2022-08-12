@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { AuthService } from './services/auth.service';
+import { MaterialModule } from './modules/material/material.module';
 
 
 
@@ -13,10 +14,12 @@ import { AuthService } from './services/auth.service';
     RouterModule,
     FormsModule,
     ReactiveFormsModule,
+    MaterialModule,
   ],
   exports: [
     FormsModule,
     ReactiveFormsModule,
+    MaterialModule
   ],
   providers: [
     AuthService
