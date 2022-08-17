@@ -10,19 +10,7 @@ import { SwiperOptions } from 'swiper';
   styleUrls: ['./posts-list.component.scss']
 })
 export class PostsListComponent implements OnInit {
-
   postsList$ = this.postSrv.loadPosts();
-  config: SwiperOptions = {
-    pagination: { 
-      el: '.swiper-pagination', 
-      clickable: true 
-    },
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev'
-    },
-    spaceBetween: 30
-  };
 
   constructor(private postSrv: PostService) { }
 

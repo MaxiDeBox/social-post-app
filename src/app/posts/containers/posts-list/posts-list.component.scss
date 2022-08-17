@@ -1,22 +1,8 @@
 $indent: 16px;
 
-
 .posts {
   .mat-list-item {
     height: auto;
     margin-bottom: $indent;
-  }
-}
-
-swiper {
-  height: auto;
-  width: inherit;
-
-  .swiper-wrapper {
-    box-sizing: border-box;
-  }
-
-  .swiper-slide {
-    max-width: 100%;
   }
 }

@@ -1,0 +1,19 @@
+<mat-card *ngIf="post">
+  <ng-container *ngIf="post.images.length > 1; else image">
+    <swiper mat-card-image [config]="config" [initialize]="post ? true : false">
+      <div class="swiper-wrapper">
+        <img class="swiper-slide" *ngFor="let postItem of post.images" [src]="postItem.src" />
+      </div>
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </swiper>
+  </ng-container>
+  <ng-template #image>
+    <img mat-card-image class="swiper-slide" *ngFor="let postItem of post.images" [src]="postItem.src" />
+  </ng-template>
+
+  <mat-card-content>
+    <p>{{ post.description }}</p>
+  </mat-card-content>
+</mat-card>

@@ -1,0 +1,12 @@
+swiper {
+  height: auto;
+  width: inherit;
+
+  .swiper-wrapper {
+    box-sizing: border-box;
+  }
+
+  .swiper-slide {
+    max-width: 100%;
+  }
+}
