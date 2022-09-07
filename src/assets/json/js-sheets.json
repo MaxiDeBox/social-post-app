@@ -1,6 +1,7 @@
 [
     {
       "postId": "",
+      "category": "Base",
       "description": "Console",
       "images": [
         {
@@ -10,6 +11,7 @@
     },
     {
       "postId": "",
+      "category": "Base",
       "description": "Numbers",
       "images": [
         {
@@ -19,6 +21,7 @@
     },
     {
       "postId": "",
+      "category": "Base",
       "description": "Strings",
       "images": [
         {
@@ -28,6 +31,7 @@
     },
     {
       "postId": "",
+      "category": "Base",
       "description": "Arithmetic Operators",
       "images": [
         {
@@ -37,6 +41,7 @@
     },
     {
       "postId": "",
+      "category": "Base",
       "description": "Comments",
       "images": [
         {
@@ -46,6 +51,7 @@
     },
     {
       "postId": "",
+      "category": "Base",
       "description": "Assignment Operators",
       "images": [
         {
@@ -55,6 +61,7 @@
     },
     {
       "postId": "",
+      "category": "Base",
       "description": "String Interpolation",
       "images": [
         {
@@ -64,10 +71,88 @@
     },
     {
       "postId": "",
+      "category": "Base",
       "description": "let Keyword",
       "images": [
         {
           "src": "https://sun9-81.userapi.com/impg/gXSgBvmHp52qs5Mht6k458XALNy_TZ6AzvO5tw/MLwwFGcrg9I.jpg?size=836x444&quality=95&sign=af71beebbd7930bddb04fc6059f21313&type=album"
+        }
+      ]
+    },
+    {
+      "postId": "",
+      "category": "Conditionals",
+      "description": "if Statement",
+      "images": [
+        {
+          "src": "https://sun9-78.userapi.com/impg/BXB_1yARM4nsbb25JUrEY_3kuP5WUlfwqu5xOw/04JFqdqzh1g.jpg?size=912x482&quality=95&sign=c27ac0ac4cb90af04050d1d9b4845f6e&type=album"
+        }
+      ]
+    },
+    {
+      "postId": "",
+      "category": "Conditionals",
+      "description": "else if",
+      "images": [
+        {
+          "src": "https://sun9-26.userapi.com/impg/Rg5ES85RK-u2EbYuM2posa9RMSrBCWJIhlCaMA/xqi5r4HC9sk.jpg?size=680x748&quality=95&sign=8cc34cfa47c32a917a79e76e60e85b8c&type=album"
+        }
+      ]
+    },
+    {
+      "postId": "",
+      "category": "Conditionals",
+      "description": "Ternary Operator",
+      "images": [
+        {
+          "src": "https://sun9-86.userapi.com/impg/N0OXp-sICJKwJiAknCHgEz3WEnvH3gx0269qeQ/1WTgiddXqJE.jpg?size=804x444&quality=95&sign=226618cc95b7b2f312705f51d246ad45&type=album"
+        }
+      ]
+    },
+    {
+      "postId": "",
+      "category": "Conditionals",
+      "description": "switch Statement",
+      "images": [
+        {
+          "src": "https://sun9-74.userapi.com/impg/KmyLeMc6kfnP0mAnB-Klon_CIFj8rbvgcQaJCw/c9Pge5TbesQ.jpg?size=926x748&quality=95&sign=0fe324d9682f5f09d9afc160bbc1ea03&type=album"
+        }
+      ]
+    },
+    {
+      "postId": "",
+      "category": "Conditionals",
+      "description": "== vs ===. The == just check the value, === check both the value and the type.",
+      "images": [
+        {
+          "src": "https://sun9-9.userapi.com/impg/Xy_wB6xG39I1QvXXGC7-rg6REsr5IziiqHft3A/bOhNa0-A3jY.jpg?size=1050x596&quality=95&sign=f181903f3a3b5dadb0ef7e6766291722&type=album"
+        }
+      ]
+    },
+    {
+      "postId": "",
+      "category": "Conditionals",
+      "description": "Operators",
+      "images": [
+        {
+          "src": "https://sun9-27.userapi.com/impg/ZJEws1dIumVVUrvQ319shgVlWpkH7jic1qunCQ/JFaM2GlIGBE.jpg?size=742x444&quality=95&sign=28a4ab27c388755e46472db4e07ed7ae&type=album",
+          "description": "Logical Operator ||"
+        },
+        {
+          "src": "https://sun9-43.userapi.com/impg/Sw4U_AxDs7rOt45lvERCImj9RibCO96wrK14-w/mmHlb2Lduv8.jpg?size=742x444&quality=95&sign=4b89f1978b54213d408eae6918834f83&type=album",
+          "description": "Logical Operator &&"
+        },
+        {
+          "src": "https://sun9-33.userapi.com/impg/ua7CYzNNLRu3yJST8VDgPkgv4SmsMYcZb7vNFg/YbC1X7AFq3k.jpg?size=742x520&quality=95&sign=2c444b351faff4a0892e439e7ccb4d00&type=album",
+          "description": "Comparison Operators"
+        },
+        {
+          "src": "https://sun9-6.userapi.com/impg/ESM0H99Q7QC0j3YCuzumVd_J8ddxw9Ln5vkJgA/RGwttrzQwTk.jpg?size=788x482&quality=95&sign=ebbdcca0e01d6588d5747d03cb939750&type=album",
+          "description": "Logical Operator !"
+        },
+        {
+          "src": "https://sun9-84.userapi.com/impg/9mRp8wRKoJtvBIORL4IfwSTw5EWGvp-RTYTSrw/FRADqmVRMb4.jpg?size=896x520&quality=95&sign=a6d465567324936d261de46e1eced3a0&type=album",
+          "description": "Nullish coalescing operator ??"
         }
       ]
     }

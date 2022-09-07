@@ -1,0 +1,12 @@
+<ng-container *ngIf="postsList$ | async as posts">
+  <section class="container lenta">
+    <mat-list class="posts">
+      <ng-container *ngFor="let post of posts; let idx = index">
+        <mat-list-item>
+          <app-post-card [post]="post"></app-post-card>
+        </mat-list-item>
+      </ng-container>
+    </mat-list>
+  </section>
+</ng-container>
+

@@ -12,6 +12,10 @@ export class PostService {
   constructor(private http: HttpClient,) { }
 
   loadPosts(): Observable<IPost[]> {
+    return this.http.get<IPost[]>('/assets/json/list.json');
+  }
+
+  loadCheetPosts(): Observable<IPost[]> {
     return this.http.get<IPost[]>('/assets/json/js-sheets.json');
   }
 }
