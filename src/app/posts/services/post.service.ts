@@ -12,6 +12,6 @@ export class PostService {
   constructor(private http: HttpClient,) { }
 
   loadPosts(): Observable<IPost[]> {
-    return this.http.get<IPost[]>('/assets/json/list.json');
+    return this.http.get<IPost[]>('/assets/json/js-sheets.json');
   }
 }

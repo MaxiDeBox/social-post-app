@@ -8,6 +8,10 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   margin: 0 auto;
 }
 
+.lenta {
+  width: 580px;
+}
+
 @media (max-width: 767px) {
   .container {
     width: 100%;
