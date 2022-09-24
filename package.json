@@ -39,6 +39,7 @@
     "@ngneat/until-destroy": "~8.0.4",
     "@nguniversal/express-engine": "^14.2.0",
     "@schematics/angular": "^14.2.3",
+    "angular-cli-ghpages": "^1.0.3",
     "firebase": "^9.9.1",
     "ngx-useful-swiper": "^10.0.1",
     "rxjs": "~6.6.0",
