@@ -8,7 +8,11 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "p:fix": "prettier --config ./.prettierrc --write \"src/{app,envirents}/**/*{.ts,.html,.scss}\"",
-    "lint": "ng lint"
+    "lint": "ng lint",
+    "dev:ssr": "ng run angular-starter:serve-ssr",
+    "serve:ssr": "node dist/angular-starter/server/main.js",
+    "build:ssr": "ng build && ng run angular-starter:server",
+    "prerender": "ng run angular-starter:prerender"
   },
   "husky": {
     "hooks": {
@@ -31,6 +35,7 @@
     "@angular/platform-browser-dynamic": "~12.1.2",
     "@angular/platform-server": "^14.2.3",
     "@angular/router": "~12.1.2",
+    "@angular/service-worker": "^12.1.2",
     "@ngneat/until-destroy": "~8.0.4",
     "@nguniversal/express-engine": "^14.2.0",
     "@schematics/angular": "^14.2.3",
